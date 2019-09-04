@@ -1,0 +1,11 @@
+C:\Users\Jubilacion\source\repos\ServiciosPets\MODELS\bin\Debug\MODELS.dll.config
+C:\Users\Jubilacion\source\repos\ServiciosPets\MODELS\bin\Debug\MODELS.dll
+C:\Users\Jubilacion\source\repos\ServiciosPets\MODELS\bin\Debug\MODELS.pdb
+C:\Users\Jubilacion\source\repos\ServiciosPets\MODELS\bin\Debug\EntityFramework.dll
+C:\Users\Jubilacion\source\repos\ServiciosPets\MODELS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jubilacion\source\repos\ServiciosPets\MODELS\bin\Debug\EntityFramework.xml
+C:\Users\Jubilacion\source\repos\ServiciosPets\MODELS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jubilacion\source\repos\ServiciosPets\MODELS\obj\Debug\MODELS.csproj.CoreCompileInputs.cache
+C:\Users\Jubilacion\source\repos\ServiciosPets\MODELS\obj\Debug\MODELS.csproj.CopyComplete
+C:\Users\Jubilacion\source\repos\ServiciosPets\MODELS\obj\Debug\MODELS.dll
+C:\Users\Jubilacion\source\repos\ServiciosPets\MODELS\obj\Debug\MODELS.pdb

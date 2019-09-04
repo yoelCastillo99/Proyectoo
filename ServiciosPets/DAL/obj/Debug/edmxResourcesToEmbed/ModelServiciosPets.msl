@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Sistema_PetsModelStoreContainer" CdmEntityContainer="Sistema_PetsEntities">
+    <EntitySetMapping Name="Accesos">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Accesos">
+        <MappingFragment StoreEntitySet="Accesos">
+          <ScalarProperty Name="Accesos_Id" ColumnName="Accesos_Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Ventas" ColumnName="Ventas" />
+          <ScalarProperty Name="Productos" ColumnName="Productos" />
+          <ScalarProperty Name="Reportes" ColumnName="Reportes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categoria_Productos">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Categoria_Productos">
+        <MappingFragment StoreEntitySet="Categoria_Productos">
+          <ScalarProperty Name="CategoriaProductos_Id" ColumnName="CategoriaProductos_Id" />
+          <ScalarProperty Name="Nombre_Categoria" ColumnName="Nombre_Categoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="Cliente_Id" ColumnName="Cliente_Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="NIT" ColumnName="NIT" />
+          <ScalarProperty Name="TipoCliente_Id" ColumnName="TipoCliente_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura_Producto">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Factura_Producto">
+        <MappingFragment StoreEntitySet="Factura_Producto">
+          <ScalarProperty Name="FacturaProd_Id" ColumnName="FacturaProd_Id" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Factura_Id" ColumnName="Factura_Id" />
+          <ScalarProperty Name="Productos_Id" ColumnName="Productos_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Facturación">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Facturación">
+        <MappingFragment StoreEntitySet="Facturación">
+          <ScalarProperty Name="Factura_Id" ColumnName="Factura_Id" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="Fecha_Emision" ColumnName="Fecha_Emision" />
+          <ScalarProperty Name="NIT_Cliente" ColumnName="NIT_Cliente" />
+          <ScalarProperty Name="Efectivo" ColumnName="Efectivo" />
+          <ScalarProperty Name="Tarjeta" ColumnName="Tarjeta" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Cheque" ColumnName="Cheque" />
+          <ScalarProperty Name="Empleado_Id" ColumnName="Empleado_Id" />
+          <ScalarProperty Name="Cliente_Id" ColumnName="Cliente_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura_Producto1">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Factura_Producto1">
+        <MappingFragment StoreEntitySet="Factura-Producto">
+          <ScalarProperty Name="Factura_Id" ColumnName="Factura_Id" />
+          <ScalarProperty Name="Productos_Id" ColumnName="Productos_Id" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lotes">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Lotes">
+        <MappingFragment StoreEntitySet="Lotes">
+          <ScalarProperty Name="Id_Lotes" ColumnName="Id_Lotes" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Fecha_Caducidad" ColumnName="Fecha_Caducidad" />
+          <ScalarProperty Name="Fecha_Produccion" ColumnName="Fecha_Produccion" />
+          <ScalarProperty Name="Productos_Id" ColumnName="Productos_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Productos">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Productos">
+        <MappingFragment StoreEntitySet="Productos">
+          <ScalarProperty Name="Productos_Id" ColumnName="Productos_Id" />
+          <ScalarProperty Name="Nombre_Producto" ColumnName="Nombre_Producto" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="PreciosinDecuento" ColumnName="PreciosinDecuento" />
+          <ScalarProperty Name="Unidad_de_medida" ColumnName="Unidad de medida" />
+          <ScalarProperty Name="Habilitar" ColumnName="Habilitar" />
+          <ScalarProperty Name="Tipo_Id" ColumnName="Tipo_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Cliente">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Tipo_Cliente">
+        <MappingFragment StoreEntitySet="Tipo_Cliente">
+          <ScalarProperty Name="TipoCliente_Id" ColumnName="TipoCliente_Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Producto">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Tipo_Producto">
+        <MappingFragment StoreEntitySet="Tipo_Producto">
+          <ScalarProperty Name="Tipo_Id" ColumnName="Tipo_Id" />
+          <ScalarProperty Name="Nombre_Tipo" ColumnName="Nombre_Tipo" />
+          <ScalarProperty Name="CategoriaProductos_Id" ColumnName="CategoriaProductos_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Trabajador">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Tipo_Trabajador">
+        <MappingFragment StoreEntitySet="Tipo_Trabajador">
+          <ScalarProperty Name="TipoEmpleado_Id" ColumnName="TipoEmpleado_Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Accesos_Id" ColumnName="Accesos_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trabajador">
+      <EntityTypeMapping TypeName="Sistema_PetsModel.Trabajador">
+        <MappingFragment StoreEntitySet="Trabajador">
+          <ScalarProperty Name="Empleado_Id" ColumnName="Empleado_Id" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="DPI" ColumnName="DPI" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Habilitar" ColumnName="Habilitar" />
+          <ScalarProperty Name="TipoEmpleado_Id" ColumnName="TipoEmpleado_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

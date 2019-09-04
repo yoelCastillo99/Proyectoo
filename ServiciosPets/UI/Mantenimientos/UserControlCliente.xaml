@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="UI.Mantenimientos.UserControlCliente"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UI.Mantenimientos"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="700">
+    <Grid  Background="#f3f8ff" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+        <Rectangle HorizontalAlignment="Left" Height="165" Margin="11,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="679"/>
+        <Label x:Name="label1" Content="Cliente Id" HorizontalAlignment="Left" Margin="40,45,0,0" VerticalAlignment="Top" Foreground="#1e7ff6" FontWeight="Bold" FontFamily="Tahoma"/>
+        <TextBox x:Name="TextClienteId" TabIndex="0" materialDesign:HintAssist.Hint="codigo" Height="30" Margin="150,44,420,419" Text="{Binding SelectedItem.Cliente_Id, ElementName=dataGrid1, Mode=OneWay}" />
+        <Label x:Name="label4" Content="NIT" HorizontalAlignment="Left" Margin="440,45,0,0" VerticalAlignment="Top" Foreground="#1e7ff6" FontWeight="Bold" FontFamily="Tahoma"/>
+        <TextBox x:Name="TextNIT" TabIndex="1" materialDesign:HintAssist.Hint="NIT" Height="30" Margin="494,48,76,422" Text="{Binding SelectedItem.Nit, ElementName=dataGrid1, Mode=OneWay}" />
+        <Label x:Name="label2" Content="Nombre Cliente" HorizontalAlignment="Left" Margin="40,81,0,0" VerticalAlignment="Top" Foreground="#1e7ff6" FontWeight="Bold" FontFamily="Tahoma"/>
+        <TextBox x:Name="TextNombreCliente" TabIndex="2" materialDesign:HintAssist.Hint="Nombre" Height="30" Margin="154,75,316,388" Text="{Binding SelectedItem.Nombre, ElementName=dataGrid1, Mode=OneWay}" />
+        <Label x:Name="label3" Content="Apellido Cliente" HorizontalAlignment="Left" Margin="40,125,0,0" VerticalAlignment="Top" Foreground="#1e7ff6" FontWeight="Bold" FontFamily="Tahoma"/>
+        <TextBox x:Name="TextApellidoCliente" TabIndex="3" materialDesign:HintAssist.Hint="Apellido" Height="30" Margin="154,118,316,352" Text="{Binding SelectedItem.Apellido, ElementName=dataGrid1, Mode=OneWay}" />
+        <Label x:Name="label5" Content="Teléfono" HorizontalAlignment="Left" Margin="406,81,0,0" VerticalAlignment="Top" Foreground="#1e7ff6" FontWeight="Bold" FontFamily="Tahoma"/>
+        <TextBox x:Name="TextTel1" TabIndex="4" materialDesign:HintAssist.Hint="teléfono" Height="30" Margin="496,78,55,392" Text="{Binding SelectedItem.Telefono, ElementName=dataGrid1, Mode=OneWay}" />
+        <Label x:Name="label6" Content="Direccion" HorizontalAlignment="Left" Margin="408,125,0,0" VerticalAlignment="Top" Foreground="#1e7ff6" FontWeight="Bold" FontFamily="Tahoma"/>
+        <TextBox x:Name="TextDireccion" TabIndex="5" materialDesign:HintAssist.Hint="direccion" Height="30" Margin="492,118,55,352" Text="{Binding SelectedItem.Direccion, ElementName=dataGrid1, Mode=OneWay}" />
+        <!--<Rectangle Fill="#c3ece9" HorizontalAlignment="Left" Height="55" Margin="17,187,0,0" Stroke="Black" VerticalAlignment="Top" Width="755"/>-->
+        <Button x:Name="buttonAgregar" Background="#0000cc" Content="Agregar" HorizontalAlignment="Left" Margin="11,196,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.053,0" Height="35" Foreground="#FFFFFF" FontWeight="Bold" BorderBrush="#ffff00" Click="ButtonAgregar_Click"/>
+        <Button x:Name="buttonGrabar" Background="#00b57d" Content="Grabar" HorizontalAlignment="Left" Margin="11,196,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.053,0" Height="35" Foreground="#FF0C0A0A" FontWeight="Bold" BorderBrush="#000000" Visibility="Hidden" Click="ButtonGrabar_Click"/>
+        <Button x:Name="buttonEditar" Background="#f8f32b" Content="Editar" HorizontalAlignment="Left" Margin="180,196,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.053,0" Height="35" Foreground="Black" BorderBrush="#000000" IsEnabled="False" Click="ButtonEditar_Click"/>
+        <Button x:Name="buttonListar" Background="#0097f8" Content="Listar" HorizontalAlignment="Left" Margin="355,196,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.003,0" Height="35" Foreground="#000000" BorderBrush="#000000" Click="ButtonListar_Click"/>
+        <Button x:Name="buttonCancelar" Background="#ff2301" Content="Cancelar" HorizontalAlignment="Left" Margin="530,196,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.003,0" Height="35" Foreground="#000000" BorderBrush="#000000" IsEnabled= "False" Click="ButtonCancelar_Click"/>
+        <DataGrid x:Name="dataGrid1" ItemsSource="{Binding estadocontratoCollection}" Background="#fff5ee" HorizontalAlignment="Left" Height="211" Margin="11,264,0,0" VerticalAlignment="Top" Width="669" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
+    </Grid>
+</UserControl>
